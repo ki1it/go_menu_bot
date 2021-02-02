@@ -26,12 +26,12 @@ func gracefulExit(w http.ResponseWriter, text string) {
 }
 
 func handleUpdate(update tgbotapi.Update, bot *tgbotapi.BotAPI) {
-	ok, msg := commands.HandleCommand(update)
-	if ok {
-		//msg.ReplyToMessageID = update.Message.MessageID
-
-		bot.Send(msg)
-	}
+	//ok, msg := commands.HandleCommand(update)
+	//if ok {
+	//	//msg.ReplyToMessageID = update.Message.MessageID
+	//
+	//	bot.Send(msg)
+	//}
 
 
 }
